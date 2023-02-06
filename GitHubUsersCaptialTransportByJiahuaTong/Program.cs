@@ -1,3 +1,6 @@
+using GitHubUsersCaptialTransportByJiahuaTong.Service;
+using GitHubUsersCaptialTransportByJiahuaTong.Service.Interfaces;
+
 using Serilog;
 using System.Reflection;
 
@@ -17,6 +20,8 @@ Log.Logger = new LoggerConfiguration()
 builder.Services.AddLogging(configure => configure.AddSerilog());
 
 builder.Services.AddSingleton(config);
+
+builder.Services.AddScoped<IGHPublicApi ,GHPublicAPIService>();
 
 
 builder.Services.AddControllers();
