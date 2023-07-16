@@ -15,10 +15,15 @@ This endpoint takes a List of usernames: This is a list of github usernames that
 {
 
 Name:string ;
- login name :string; 
+
+login name :string; 
+
 company :string; 
+
 number of followers :int; 
+
 number of public repositories :int;
+
 The average number of followers per public repository :int
 (ie. number of followers divided by the number of public repositories)
 
