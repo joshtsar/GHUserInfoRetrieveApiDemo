@@ -5,7 +5,8 @@ A demo .net core web api to retrieve github user info via github public api
 This solution includes a .NET core 6 Webapi project that has an API endpoint called retrieveUsers and an xunit test project.
 The Web api features and requirements:
 This endpoint takes a List<string>  usernames: This is a list of github usernames that will be used to look up basic information from GitHub's public API. Only users in this list to be retrieved from Github. 
-→ The endpoint take these usernames and hit GitHub's public API to get basic user information 
+→ The endpoint take these usernames and hit GitHub's public API to get basic user information
+
 → This API call returns to the user a list of basic information for those Github users including: 
 {
 Name:string ;
