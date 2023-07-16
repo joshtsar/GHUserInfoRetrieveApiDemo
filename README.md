@@ -11,7 +11,9 @@ This endpoint takes a List of usernames: This is a list of github usernames that
 → The endpoint take these usernames and hit GitHub's public API to get basic user information
 
 → This API call returns to the user a list of basic information for those Github users including: 
+
 {
+
 Name:string ;
  login name :string; 
 company :string; 
@@ -19,6 +21,7 @@ number of followers :int;
 number of public repositories :int;
 The average number of followers per public repository :int
 (ie. number of followers divided by the number of public repositories)
+
 } 
 
 → The returned users are sorted alphabetically by name 
