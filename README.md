@@ -1,5 +1,5 @@
 # GHUserInfoRetrieveApiDemo
-A demo .net core web api to retrieve github user info via github public api
+A demo[for code review] .net core web api to retrieve github user info via github public api
 
 .NET Core 6 API Demo Project Description:
 This solution includes a .NET core 6 Webapi project that has an API endpoint called retrieveUsers and an xunit test project.
