@@ -33,7 +33,8 @@ The average number of followers per public repository :int
 
 → If duplicate usernames are provided, the api code only hit github api endpoint one time and the matching user only to be returned once 
 
-→ If some usernames cannot be found, this should not fail the other usernames that were requested → Use regular http calls to hit GitHub's API, avoid using any pre made GitHub net core libraries to integrate with GitHub's API 
+→ If some usernames cannot be found, this should not fail the other usernames that were requested 
+→ Use regular http calls to hit GitHub's API, avoid using any pre made GitHub net core libraries to integrate with GitHub's API 
 
 →Providing sound error handling and logging within the solution
 
