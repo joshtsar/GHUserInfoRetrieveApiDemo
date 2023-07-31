@@ -63,6 +63,8 @@ namespace GitHubUsersInfoDemoByJiahuaTong.Service
                 if (usrInfo != null)
                     GHUserInfoList.Add(usrInfo);
             };
+            if (GHUserInfoList.Count == 0)
+                throw new KeyNotFoundException("No matched user info found!");
             return (from usr in GHUserInfoList
                     orderby usr.Name
                     select usr).ToList();
