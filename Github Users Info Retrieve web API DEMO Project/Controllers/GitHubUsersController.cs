@@ -20,15 +20,17 @@ namespace GitHubUsersInfoDemoByJiahuaTong.Controllers
         // GET: GitHubUsersController
         [HttpGet("acquireUsersInfo")]
     
-        public async Task<ActionResult<IEnumerable<GithubUserInfo>>> RetrieveUsers([FromQuery] List<string> UserNameList)
+        public async Task<ActionResult<IEnumerable<GithubUserInfo>>?> RetrieveUsers([FromQuery] List<string> UserNameList)
         {
             var result = await _githubPublicApiService.GetUserInfoByUserNames(UserNameList);
-            if(result?.Count()>0)
-                return Ok (result);
-            else if (result == null)
-                return BadRequest("Invalid User Names requested, at:" + DateTime.Now.ToShortDateString());
+            
+            if (Response.StatusCode == 200&& result?.Count() > 0)
+                return Ok(result);
             else
-                return NotFound("No matched user info found!");
+            {
+                await Response.Body.FlushAsync();
+                return null;
+            }
 
         }
         
