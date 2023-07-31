@@ -1,4 +1,6 @@
-﻿using System.Globalization;
+﻿using Newtonsoft.Json;
+
+using System.Globalization;
 using System.Net;
 using System.Text.Json;
 
@@ -25,9 +27,27 @@ namespace GitHubUsersInfoDemoByJiahuaTong.Middleware
             }
             catch (Exception err)
             {
+
                 var response = context.Response;
-                response.ContentType = "application/json";
-                if(err is not OperationCanceledException operCnlExcpt)
+                if (!response.HasStarted)
+                {
+                    response.ContentType = "application/json";
+
+                }
+                else
+                {
+                    _logger.LogWarning("Can't write error response. Response has already started.");
+                    return;
+                }
+
+                if (err is not OperationCanceledException && err.InnerException != null)
+                {
+                    while (err.InnerException != null)
+                    {
+                        err = err.InnerException;
+                    }
+                }
+                if (err is not OperationCanceledException)
                     _logger.LogError(err, err.Message);
 
                 switch (err)
@@ -49,12 +69,10 @@ namespace GitHubUsersInfoDemoByJiahuaTong.Middleware
                         response.StatusCode = (int)HttpStatusCode.InternalServerError;
                         break;
                 }
-
-                var result = JsonSerializer.Serialize(new { message = err?.Message });
-                await response.WriteAsync(result);
+                await response.WriteAsync(JsonConvert.SerializeObject(new { exceptionMsg = err?.Message }));
             }
         }
-        
+
     }
     
 }
