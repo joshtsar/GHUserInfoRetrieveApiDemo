@@ -1,4 +1,4 @@
-# GHUserInfoRetrieveApiDemo(REST API)
+# GitHubUserInfoRetrieveApiDemo(REST API)
 A demo[for code review] .net core web api to retrieve github user info via github public api
 (PLEASE DOWNLOAD THE CODE AND RUN SWAGGER UNDER DEBUG MODE)
 .NET Core 6 API Demo Project Description:
@@ -37,7 +37,7 @@ The average number of followers per public repository :int
 
 → Use regular http calls to hit GitHub's API, avoid using any pre made GitHub net core libraries to integrate with GitHub's API 
 
-→Providing sound error handling and logging within the solution
+→ Providing sound error handling and logging within the solution
 
 * The API endpoint (with documentation) needed to get Github user information is https://docs.github.com/en/rest/reference/users#get-a-user 
 
