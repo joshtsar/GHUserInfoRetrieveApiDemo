@@ -1,0 +1,41 @@
+2023-09-13 19:53:00.625 +10:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-13 19:53:00.717 +10:00 [INF] Hosting environment: Development
+2023-09-13 19:53:00.721 +10:00 [INF] Content root path: C:\temp\GitHubUsersInfoDemoByJiahuaTong\
+2023-09-13 19:53:34.847 +10:00 [INF] Start processing HTTP request GET "https://api.github.com/users/ton"
+2023-09-13 19:53:34.864 +10:00 [INF] Sending HTTP request GET "https://api.github.com/users/ton"
+2023-09-13 19:53:35.571 +10:00 [INF] Received HTTP response headers after 672.5776ms - 401
+2023-09-13 19:53:35.580 +10:00 [INF] End processing HTTP request after 764.4573ms - 401
+2023-09-13 19:53:36.006 +10:00 [INF] Start processing HTTP request GET "https://api.github.com/users/josh"
+2023-09-13 19:53:36.009 +10:00 [INF] Sending HTTP request GET "https://api.github.com/users/josh"
+2023-09-13 19:53:36.285 +10:00 [INF] Received HTTP response headers after 272.124ms - 401
+2023-09-13 19:53:36.290 +10:00 [INF] End processing HTTP request after 282.1648ms - 401
+2023-09-13 20:03:05.675 +10:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-13 20:03:05.718 +10:00 [INF] Hosting environment: Development
+2023-09-13 20:03:05.721 +10:00 [INF] Content root path: C:\temp\GitHubUsersInfoDemoByJiahuaTong\
+2023-09-13 20:03:25.862 +10:00 [INF] Start processing HTTP request GET "https://api.github.com/users/string"
+2023-09-13 20:03:25.870 +10:00 [INF] Sending HTTP request GET "https://api.github.com/users/string"
+2023-09-13 20:03:26.538 +10:00 [INF] Received HTTP response headers after 637.2444ms - 401
+2023-09-13 20:03:26.547 +10:00 [INF] End processing HTTP request after 700.3944ms - 401
+2023-09-13 20:04:06.665 +10:00 [INF] Start processing HTTP request GET "https://api.github.com/users/[tony,tom]"
+2023-09-13 20:04:06.669 +10:00 [INF] Sending HTTP request GET "https://api.github.com/users/[tony,tom]"
+2023-09-13 20:04:06.934 +10:00 [INF] Received HTTP response headers after 259.6412ms - 401
+2023-09-13 20:04:06.939 +10:00 [INF] End processing HTTP request after 271.9975ms - 401
+2023-09-13 20:04:43.856 +10:00 [INF] Start processing HTTP request GET "https://api.github.com/users/ton"
+2023-09-13 20:04:43.860 +10:00 [INF] Sending HTTP request GET "https://api.github.com/users/ton"
+2023-09-13 20:04:44.121 +10:00 [INF] Received HTTP response headers after 256.3546ms - 401
+2023-09-13 20:04:44.125 +10:00 [INF] End processing HTTP request after 268.0694ms - 401
+2023-09-13 20:04:44.130 +10:00 [INF] Start processing HTTP request GET "https://api.github.com/users/sting"
+2023-09-13 20:04:44.134 +10:00 [INF] Sending HTTP request GET "https://api.github.com/users/sting"
+2023-09-13 20:04:44.395 +10:00 [INF] Received HTTP response headers after 257.6383ms - 401
+2023-09-13 20:04:44.400 +10:00 [INF] End processing HTTP request after 269.8276ms - 401
+2023-09-13 20:10:01.047 +10:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-09-13 20:10:01.091 +10:00 [INF] Hosting environment: Development
+2023-09-13 20:10:01.093 +10:00 [INF] Content root path: C:\temp\GitHubUsersInfoDemoByJiahuaTong\
+2023-09-13 20:10:16.024 +10:00 [INF] Start processing HTTP request GET "https://api.github.com/users/string"
+2023-09-13 20:10:16.032 +10:00 [INF] Sending HTTP request GET "https://api.github.com/users/string"
+2023-09-13 20:10:16.778 +10:00 [INF] Received HTTP response headers after 718.3712ms - 200
+2023-09-13 20:10:16.784 +10:00 [INF] End processing HTTP request after 786.3641ms - 200
+2023-09-13 20:10:17.102 +10:00 [INF] Start processing HTTP request GET "https://api.github.com/users/tom"
+2023-09-13 20:10:17.106 +10:00 [INF] Sending HTTP request GET "https://api.github.com/users/tom"
+2023-09-13 20:10:17.405 +10:00 [INF] Received HTTP response headers after 297.3142ms - 200
+2023-09-13 20:10:17.407 +10:00 [INF] End processing HTTP request after 307.2023ms - 200
